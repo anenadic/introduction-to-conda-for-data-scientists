@@ -5,14 +5,18 @@ exercises: 10
 ---
 
 ::: questions
+
 - "What are Conda channels?"
 - "What are Conda packages?"
 - "Why should I be explicit about which channels my research project uses?"
 - "What should I do if a Python package isn't available via a Conda channel?"
+
 :::
 
 ::: objectives:
+
 - "Install a package from a specific channel."
+  
 :::
 
 
@@ -40,7 +44,7 @@ metadata files, see the [docs][conda-pkg-spec-docs].
 As an example of Conda package structure consider the [Conda](https://pytorch.org/) package for 
 Python 3.6 version of PyTorch targeting a 64-bit Mac OS, `pytorch-1.1.0-py3.6_0.tar.bz2`.
 
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+```text
 ├── bin
 │   └── convert-caffe2-to-onnx
 │   └── convert-onnx-to-caffe2
@@ -61,8 +65,7 @@ Python 3.6 version of PyTorch targeting a 64-bit Mac OS, `pytorch-1.1.0-py3.6_0.
             ├── caffe2/
             ├── torch/
             └── torch-1.1.0-py3.6.egg-info/
-</pre></div>
-</div>
+```
 
 A complete listing of available PyTorch packages can be found on 
 [Anaconda Cloud](https://anaconda.org/pytorch/pytorch/files).
