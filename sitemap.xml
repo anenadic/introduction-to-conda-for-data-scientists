@@ -25,7 +25,13 @@
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/index.html</loc>
@@ -55,16 +61,34 @@
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/profiles.html</loc>
