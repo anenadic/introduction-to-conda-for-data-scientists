@@ -358,7 +358,7 @@
         
 <section id="aio-01-getting-started-with-conda"><p>Content from <a href="01-getting-started-with-conda.html">Getting Started with Conda</a></p>
 <hr>
-<p>Last updated on 2024-11-14 |
+<p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/01-getting-started-with-conda.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -600,7 +600,7 @@ software separately for each project? What are some of the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>You may notice that many of the potential benefits from installing
 software separately for each project require the ability to isolate the
@@ -646,9 +646,8 @@ of Python in your normal environment.</p>
 <div id="conda-vs.-miniconda-vs.-anaconda" class="callout-inner">
 <h3 class="callout-title">Conda vs. Miniconda vs. Anaconda</h3>
 <div class="callout-content">
-<p align="center">
-<img alt="Conda vs. Miniconda vs. Anaconda" src="fig/miniconda_vs_anaconda.png" width="500" class="figure"></p>
-<p>Users are often confused about the differences between Conda,
+<figure><img src="fig/miniconda_vs_anaconda.png" style="width:67.0%" alt="A graphical representation of Conda as a subset of Miniconda which is a subset of Anaconda" class="figure mx-auto d-block"><div class="figcaption">Conda vs. Miniconda vs. Anaconda</div>
+</figure><p>Users are often confused about the differences between Conda,
 Miniconda, and Anaconda. Conda is a tool for managing environments and
 installing packages. Miniconda combines Conda with Python and a small
 number of core packages; Anaconda includes Miniconda as well as a large
@@ -709,7 +708,7 @@ language.</li>
 </div>
 </section></section><section id="aio-02-working-with-environments"><p>Content from <a href="02-working-with-environments.html">Working with Environments</a></p>
 <hr>
-<p>Last updated on 2024-11-14 |
+<p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/02-working-with-environments.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -811,8 +810,7 @@ deactivate environments, which is how you switch between them.</p>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="avoid-installing-packages-into-your-base-conda-environment" class="callout-inner">
-<h3 class="callout-title">Avoid installing packages into your
-<code>base</code> Conda environment</h3>
+<h3 class="callout-title">Avoid installing packages into your “base” Conda environment</h3>
 <div class="callout-content">
 <p>Conda has a default environment called <code>base</code> that include
 a Python installation and some core system libraries and dependencies of
@@ -868,7 +866,11 @@ then you can use search to see what versions are available using the
 <p>So, for example, if you wanted to see which versions of <a href="https://scikit-learn.org/stable/" class="external-link">Scikit-learn</a>, a popular
 Python library for machine learning, were available, you would run the
 following.</p>
-<pre><code>$ conda search scikit-learn</code></pre>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> conda search scikit-learn</span></code></pre>
+</div>
 <p>As always you can run <code>conda search --help</code> to learn about
 available options.</p>
 </div>
@@ -962,7 +964,11 @@ environment by name using the <code>activate</code> command.</p>
 </div>
 <p>You can see that an environment has been activated because the shell
 prompt will now include the name of the active environment.</p>
-<pre><code>(basic-scipy-env) $</code></pre>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="kw">(</span><span class="ex">basic-scipy-env</span><span class="kw">)</span> <span class="ex">$</span></span></code></pre>
+</div>
 </section><section><h2 class="section-heading" id="deactivate-the-current-environment">Deactivate the current environment<a class="anchor" aria-label="anchor" href="#deactivate-the-current-environment"></a>
 </h2>
 <hr class="half-width">
@@ -976,7 +982,11 @@ prompt will now include the name of the active environment.</p>
 <p>You can see that an environment has been deactivated because the
 shell prompt will no longer include the name of the previously active
 environment.</p>
-<pre><code>$</code></pre>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span></span></code></pre>
+</div>
 <div id="returning-to-the-base-environment" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1557,16 +1567,41 @@ installed in an environment.</li>
 </div>
 </section></section><section id="aio-03-using-packages-and-channels"><p>Content from <a href="03-using-packages-and-channels.html">Using Packages and Channels</a></p>
 <hr>
-<p>Last updated on 2024-11-14 |
+<p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/03-using-packages-and-channels.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<div class="objectives:">
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What are Conda channels?</li>
+<li>What are Conda packages?</li>
+<li>Why should I be explicit about which channels my research project
+uses?</li>
+<li>What should I do if a Python package isn’t available via a Conda
+channel?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
 <ul>
 <li>Install a package from a specific channel.</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <section><h2 class="section-heading" id="what-are-conda-packages">What are Conda packages?<a class="anchor" aria-label="anchor" href="#what-are-conda-packages"></a>
 </h2>
@@ -1643,9 +1678,13 @@ implementation.</li>
 <code>defaults</code> channel because, unless otherwise specified,
 packages installed using <code>conda</code> will be downloaded from
 these channels.</p>
-<blockquote>
-<h2 id="the-conda-forge-channel">The <code>conda-forge</code>
-channel</h2>
+<div id="the-conda-forge-channel" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="the-conda-forge-channel" class="callout-inner">
+<h3 class="callout-title">The conda-forge channel</h3>
+<div class="callout-content">
 <p>In addition to the <code>default</code> channels that are managed by
 Anaconda Inc., there is another channel called that also has a special
 status. The <a href="https://github.com/conda-forge" class="external-link">Conda-Forge</a>
@@ -1661,44 +1700,66 @@ those on the <code>defaults</code> channel.</li>
 aren’t available from <code>defaults</code>.</li>
 <li>You may wish to use a dependency such as <code>openblas</code> (from
 <code>conda-forge</code>) instead of <code>mkl</code> (from
-<code>defaults</code>). {: .callout}</li>
+<code>defaults</code>).</li>
 </ol>
-</blockquote>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="how-do-i-install-a-package-from-a-specific-channel">How do I install a package from a specific channel?<a class="anchor" aria-label="anchor" href="#how-do-i-install-a-package-from-a-specific-channel"></a>
 </h2>
 <hr class="half-width">
 <p>You can install a package from a specific channel into the currently
 activate environment by passing the <code>--channel</code> option to the
 <code>conda install</code> command as follows.</p>
-<pre><code>$ conda activate machine-learning-env
-$ conda install scipy=1.6 --channel conda-forge</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> conda activate machine-learning-env</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">$</span> conda install scipy=1.6 <span class="at">--channel</span> conda-forge</span></code></pre>
+</div>
 <p>You can also install a package from a specific channel into a named
 environment (using <code>--name</code>) or into an environment installed
 at a particular prefix (using <code>--prefix</code>). For example, the
 following command installs the <code>scipy</code> package from the
 <code>conda-forge</code> channel into the environment called
 <code>my-first-conda-env</code> which we created earlier.</p>
-<pre><code>$ conda install scipy=1.6 --channel conda-forge --name machine-learning-env</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> conda install scipy=1.6 <span class="at">--channel</span> conda-forge <span class="at">--name</span> machine-learning-env</span></code></pre>
+</div>
 <p>This command would install <code>tensorflow</code> package from
 <code>conda-forge</code> channel into an environment installed into the
 <code>env/</code> sub-directory.</p>
-<pre><code>$ conda install tensorflow=1.14 --channel conda-forge --prefix ./env</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">$</span> conda install tensorflow=1.14 <span class="at">--channel</span> conda-forge <span class="at">--prefix</span> ./env</span></code></pre>
+</div>
 <p>Here is another example for R users. The following command would
 install <a href="https://anaconda.org/r/r-tidyverse" class="external-link"><code>r-tidyverse</code></a>
 package from the <code>conda-forge</code> channel into an environment
 installed into the <code>env/</code> sub-directory.</p>
-<pre><code>$ cd ~/Desktop/introduction-to-conda-for-data-scientists
-$ conda install r-tidyverse=1.3 --channel conda-forge --prefix ./env</code></pre>
-<p>{: .language-bash}</p>
-<blockquote>
-<h2 id="channel-priority">Channel priority</h2>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/introduction-to-conda-for-data-scientists</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="ex">$</span> conda install r-tidyverse=1.3 <span class="at">--channel</span> conda-forge <span class="at">--prefix</span> ./env</span></code></pre>
+</div>
+<div id="channel-priority" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="channel-priority" class="callout-inner">
+<h3 class="callout-title">Channel priority</h3>
+<div class="callout-content">
 <p>You may specify multiple channels for installing packages by passing
 the <code>--channel</code> argument multiple times.</p>
-<pre><code>$ conda install scipy=1.6 --channel conda-forge --channel bioconda</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> conda install scipy=1.6 <span class="at">--channel</span> conda-forge <span class="at">--channel</span> bioconda</span></code></pre>
+</div>
 <p>Channel priority decreases from left to right - the first argument
 has higher priority than the second. For reference, bioconda is a
 channel for the conda package manager specializing in bioinformatics
@@ -1706,10 +1767,12 @@ software. For those interested in learning more about the Bioconda
 project, checkout the project’s <a href="https://bioconda.github.io/" class="external-link">GitHub</a> page.</p>
 <p>Please note that in our example, adding <code>bioconda</code> channel
 is irrelevant because <code>scipy</code> is no longer available on
-<code>bioconda</code> channel. {: .callout}</p>
-</blockquote>
-</section><section><h2 class="section-heading" id="my-package-isnt-available-on-the-defaults-channel-what-should-i-do">My package isn’t available on the <code>defaults</code> channel!
-What should I do?<a class="anchor" aria-label="anchor" href="#my-package-isnt-available-on-the-defaults-channel-what-should-i-do"></a>
+<code>bioconda</code> channel.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="my-package-isnt-available-on-the-defaults-channel-what-should-i-do">My package isn’t available on the “defaults” channel! What should I
+do?<a class="anchor" aria-label="anchor" href="#my-package-isnt-available-on-the-defaults-channel-what-should-i-do"></a>
 </h2>
 <hr class="half-width">
 <p>It may very well be the case that packages (or often more recent
@@ -1739,54 +1802,63 @@ environment from PyPI using <code>pip</code>.</li>
 Python 3 API that can be used to interact with Kaggle datasets, kernels
 and competition submissions. You can search for the package on the
 <code>defaults</code> channels but you will not find it!</p>
-<pre><code>$ conda search kaggle
-Loading channels: done
-No match found for: kaggle. Search: *kaggle*
-
-PackagesNotFoundError: The following packages are not available from current channels:
-
-  - kaggle
-
-Current channels:
-
-  - https://repo.anaconda.com/pkgs/main/osx-64
-  - https://repo.anaconda.com/pkgs/main/noarch
-  - https://repo.anaconda.com/pkgs/free/osx-64
-  - https://repo.anaconda.com/pkgs/free/noarch
-  - https://repo.anaconda.com/pkgs/r/osx-64
-  - https://repo.anaconda.com/pkgs/r/noarch
-
-To search for alternate channels that may provide the conda package you're
-looking for, navigate to
-
-    https://anaconda.org
-
-and use the search bar at the top of the page.</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">$</span> conda search kaggle</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="ex">Loading</span> channels: done</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="ex">No</span> match found for: kaggle. Search: <span class="pp">*</span>kaggle<span class="pp">*</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="ex">PackagesNotFoundError:</span> The following packages are not available from current channels:</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>  <span class="ex">-</span> kaggle</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="ex">Current</span> channels:</span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/main/osx-64</span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/main/noarch</span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/free/osx-64</span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/free/noarch</span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/r/osx-64</span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>  <span class="ex">-</span> https://repo.anaconda.com/pkgs/r/noarch</span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a><span class="ex">To</span> search for alternate channels that may provide the conda package you<span class="st">'re</span></span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a><span class="st">looking for, navigate to</span></span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a><span class="st">    https://anaconda.org</span></span>
+<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a><span class="st">and use the search bar at the top of the page.</span></span></code></pre>
+</div>
 <p>The <a href="https://github.com/Kaggle/kaggle-api" class="external-link">official
 installation instructions</a> suggest downloading the
 <code>kaggle</code> package using <code>pip</code>. But since we are
 using <code>conda</code> we should check whether the package exists on
 at least <code>conda-forge</code> channel before proceeding to use
 <code>pip</code>.</p>
-<pre><code>$ conda search --channel conda-forge kaggle
-Loading channels: done
-# Name                       Version           Build  Channel
-kaggle                         1.5.3          py27_1  conda-forge
-kaggle                         1.5.3          py36_1  conda-forge
-kaggle                         1.5.3          py37_1  conda-forge
-kaggle                         1.5.4          py27_0  conda-forge
-kaggle                         1.5.4          py36_0  conda-forge
-kaggle                         1.5.4          py37_0  conda-forge
-.
-.
-.</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="ex">$</span> conda search <span class="at">--channel</span> conda-forge kaggle</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="ex">Loading</span> channels: done</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co"># Name                       Version           Build  Channel             </span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.3          py27_1  conda-forge         </span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.3          py36_1  conda-forge         </span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.3          py37_1  conda-forge         </span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.4          py27_0  conda-forge         </span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.4          py36_0  conda-forge         </span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="ex">kaggle</span>                         1.5.4          py37_0  conda-forge         </span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="bu">.</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="bu">.</span></span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a><span class="bu">.</span></span></code></pre>
+</div>
 <p>Or you can also check online at <a href="https://anaconda.org/conda-forge/kaggle" class="external-link">https://anaconda.org/conda-forge/kaggle</a>.</p>
 <p>Once we know that the <code>kaggle</code> package is available via
 <code>conda-forge</code> we can go ahead and install it.</p>
-<pre><code>$ conda install --channel conda-forge kaggle=1.5.10  --prefix ./env</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">$</span> conda install <span class="at">--channel</span> conda-forge kaggle=1.5.10  <span class="at">--prefix</span> ./env</span></code></pre>
+</div>
 </section><section><h2 class="section-heading" id="what-actually-happens-when-i-install-packages">What actually happens when I install packages?<a class="anchor" aria-label="anchor" href="#what-actually-happens-when-i-install-packages"></a>
 </h2>
 <hr class="half-width">
@@ -1807,11 +1879,10 @@ channels/platform</li>
 </ol>
 <p>The [conda documentation][conda-install-docs] has a nice decision
 tree that describes the package installation process.</p>
-<p align="center">
-<img alt="Installing with Conda" src="../fig/installing-with-conda.png" width="250" class="figure"></p>
-<blockquote>
-<h2 id="specifying-channels-when-installing-packages">Specifying
-channels when installing packages</h2>
+<figure><img src="fig/installing-with-conda.png" alt="A flowchart showing what happens when you install packages with conda" class="figure mx-auto d-block"><div class="figcaption">Installing with Conda</div>
+</figure><div class="section level3">
+<h3 id="specifying-channels-when-installing-packages">Specifying channels when installing packages<a class="anchor" aria-label="anchor" href="#specifying-channels-when-installing-packages"></a>
+</h3>
 <p>Like many projects, <a href="https://pytorch.org/" class="external-link">PyTorch</a> has
 its own <a href="https://anaconda.org/pytorch" class="external-link">channel</a> on Anaconda
 Cloud. This channel has several interesting packages, in particular
@@ -1823,33 +1894,37 @@ and then create a Python 3.6 environment in a sub-directory called
 most recent version of <code>jupyterlab</code> in your environment (so
 you have a nice UI) and <code>matplotlib</code> (so you can make
 plots).</p>
-<blockquote>
-<h2 id="solution">Solution</h2>
 <p>In order to create a new environment you use the
 <code>conda create</code> command as follows.</p>
-<pre><code>$ mkdir my-computer-vision-project
-$ cd my-computer-vision-project/
-$ conda create --prefix ./env --channel pytorch \
- python=3.6 \
- jupyterlab=1.0 \
- pytorch=1.1 \
- torchvision=0.3 \
- matplotlib=3.1</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="ex">$</span> mkdir my-computer-vision-project</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="ex">$</span> cd my-computer-vision-project/</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="ex">$</span> conda create <span class="at">--prefix</span> ./env <span class="at">--channel</span> pytorch <span class="dt">\</span></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>python=3.6 <span class="dt">\</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>jupyterlab=1.0 <span class="dt">\</span></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>pytorch=1.1 <span class="dt">\</span></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>torchvision=0.3 <span class="dt">\</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>matplotlib=3.1</span></code></pre>
+</div>
 <p>Hint: For the lazy typers: the <code>--channel</code> argument can
 also be shortened to <code>-c</code>, for more abbreviations, see also
 the <a href="https://docs.conda.io/projects/conda/en/latest/commands.html" class="external-link">Conda
-command reference</a> . {: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="alternative-syntax-for-installing-packages-from-specific-channels">Alternative
-syntax for installing packages from specific channels</h2>
+command reference</a> .</p>
+</div>
+<div class="section level3">
+<h3 id="alternative-syntax-for-installing-packages-from-specific-channels">Alternative syntax for installing packages from specific
+channels<a class="anchor" aria-label="anchor" href="#alternative-syntax-for-installing-packages-from-specific-channels"></a>
+</h3>
 <p>There exists an alternative syntax for installing conda packages from
 specific channels that more explicitly links the channel being used to
 install a particular package.</p>
-<pre><code>$ conda install conda-forge::tensorflow  --prefix ./env</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">$</span> conda install conda-forge::tensorflow  <span class="at">--prefix</span> ./env</span></code></pre>
+</div>
 <p>Create a new folder <code>my-final-project</code> in
 <code>~/Desktop/introduction-to-conda-for-data-scientists</code> and
 repeat the previous exercise using this alternative syntax to install
@@ -1857,22 +1932,22 @@ repeat the previous exercise using this alternative syntax to install
 <code>matplotlib</code> from the <code>conda-forge</code> channel and
 <code>pytorch</code> and <code>torchvision</code> from the
 <code>pytorch</code> channel.</p>
-<blockquote>
-<h2 id="solution-1">Solution</h2>
 <p>One possibility would be to use the <code>conda create</code> command
 as follows.</p>
-<pre><code>$ cd ~/Desktop/introduction-to-conda-for-data-scientists
-$ mkdir my-final-project
-$ cd my-final-project/
-$ conda create --prefix ./env \
- conda-forge::python=3.6 \
- conda-forge::jupyterlab=1.0 \
- conda-forge::matplotlib=3.1 \
- pytorch::pytorch=1.1 \
- pytorch::torchvision=0.3</code></pre>
-<p>{: .language-bash} {: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/introduction-to-conda-for-data-scientists</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="ex">$</span> mkdir my-final-project</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="ex">$</span> cd my-final-project/</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="ex">$</span> conda create <span class="at">--prefix</span> ./env <span class="dt">\</span></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a>conda-forge::python=3.6 <span class="dt">\</span></span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a>conda-forge::jupyterlab=1.0 <span class="dt">\</span></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a>conda-forge::matplotlib=3.1 <span class="dt">\</span></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a>pytorch::pytorch=1.1 <span class="dt">\</span></span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a>pytorch::torchvision=0.3</span></code></pre>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="a-python-package-isnt-available-on-any-conda-channel-what-should-i-do">A Python package isn’t available on any Conda channel! What should I
 do?<a class="anchor" aria-label="anchor" href="#a-python-package-isnt-available-on-any-conda-channel-what-should-i-do"></a>
 </h2>
@@ -1886,34 +1961,39 @@ packages when using Conda.</p>
 where it is used to manage any Python packages needed by your OS.
 <strong>You do not want to use this <code>pip</code> to install Python
 packages when using Conda environments.</strong></p>
-<pre><code>(base) $ conda deactivate
-$ which python
-/usr/bin/python
-$ which pip # sometimes installed as pip3
-/usr/bin/pip</code></pre>
-<p>{: .language-bash}</p>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">$</span> conda deactivate</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="ex">$</span> which python</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="ex">/usr/bin/python</span></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="ex">$</span> which pip <span class="co"># sometimes installed as pip3</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a><span class="ex">/usr/bin/pip</span></span></code></pre>
+</div>
 <p>Second, Pip is also included in the Miniconda installer where it is
 used to install and manage OS specific Python packages required to setup
 your base Conda environment. <strong>You do not want to use this
 <code>pip</code> to install Python packages when using Conda
 environments.</strong></p>
-<pre><code>$ conda activate
-(base) $ which python
-~/miniconda3/bin/python
-$ which pip
-~/miniconda3/bin/pip</code></pre>
-<p>{: .language-bash}</p>
-<blockquote>
-<h2 id="another-reaon-to-avoid-installing-packages-into-your-base-conda-environment">Another
-reaon to avoid installing packages into your <code>base</code> Conda
-environment</h2>
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">$</span> conda activate</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">$</span> which python</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="ex">~/miniconda3/bin/python</span></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="ex">$</span> which pip</span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="ex">~/miniconda3/bin/pip</span></span></code></pre>
+</div>
+<div class="section level3">
+<h3 id="another-reaon-to-avoid-installing-packages-into-your-base-conda-environment">Another reaon to avoid installing packages into your “base” Conda
+environment<a class="anchor" aria-label="anchor" href="#another-reaon-to-avoid-installing-packages-into-your-base-conda-environment"></a>
+</h3>
 <p>If your <code>base</code> Conda environment becomes cluttered with a
 mix of Pip and Conda installed packages it may no longer function.
 Creating separate conda environments allows you to delete and recreate
 environments readily so you dont have to worry about risking your core
-Conda functionality when mixing packages installed with Conda and Pip.
-{: .callout}</p>
-</blockquote>
+Conda functionality when mixing packages installed with Conda and
+Pip.</p>
 <p>If you find yourself needing to install a Python package that is only
 available via Pip, then you should first install <code>pip</code> into
 your Conda environment and then use that <code>pip</code> to install the
@@ -1922,9 +2002,10 @@ environment to install Python packages not available via Conda channels
 will help you avoid difficult to debug issues that frequently arise when
 using Python packages installed via a <code>pip</code> that was not
 installed inside you Conda environment.</p>
-<blockquote>
-<h2 id="conda-pip-conda-wherever-possible-pip-only-when-necessary">Conda
-(+Pip): Conda wherever possible; Pip only when necessary</h2>
+</div>
+<div class="section level3">
+<h3 id="conda-pip-conda-wherever-possible-pip-only-when-necessary">Conda (+Pip): Conda wherever possible; Pip only when necessary<a class="anchor" aria-label="anchor" href="#conda-pip-conda-wherever-possible-pip-only-when-necessary"></a>
+</h3>
 <p>When using Conda to manage environments for your Python project it is
 a good idea to install packages available via both Conda and Pip using
 Conda; however there will always be cases where a package is only
@@ -1938,13 +2019,13 @@ Python-based Conda environment.</li>
 installing anything using <code>pip</code>.</li>
 <li>Prefer <code>python -m pip install</code> over
 <code>pip install</code>; never use <code>pip</code> with the
-<code>--user</code> argument. {: .callout}</li>
+<code>--user</code> argument.</li>
 </ul>
-</blockquote>
+</div>
+<div class="section level3">
+<h3 id="installing-packages-into-conda-environments-using-pip">Installing packages into Conda environments using pip<a class="anchor" aria-label="anchor" href="#installing-packages-into-conda-environments-using-pip"></a>
+</h3>
 <blockquote>
-<h2 id="installing-packages-into-conda-environments-using-pip">Installing
-packages into Conda environments using <code>pip</code>
-</h2>
 <p><a href="https://github.com/yzhao062/combo" class="external-link">Combo</a> is a
 comprehensive Python toolbox for combining machine learning models and
 scores. Model combination can be considered as a subtask of <a href="https://en.wikipedia.org/wiki/Ensemble_learning" class="external-link">ensemble
@@ -1954,7 +2035,7 @@ science competitions like <a href="https://www.kaggle.com/" class="external-link
 previous challenge and use <code>pip</code> to install
 <code>combo</code>.</p>
 <blockquote>
-<h2 id="solution-2">Solution</h2>
+<h2 id="solution">Solution</h2>
 <p>The following commands will activate the <code>basic-scipy-env</code>
 and install <code>combo</code>.</p>
 <pre><code>$ conda install --name machine-learning-env pip
@@ -1986,9 +2067,10 @@ completely re-create that project’s software environment.</li>
 </div>
 </div>
 </div>
+</div>
 </section></section><section id="aio-04-sharing-environments"><p>Content from <a href="04-sharing-environments.html">Sharing Environments</a></p>
 <hr>
-<p>Last updated on 2024-11-14 |
+<p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/04-sharing-environments.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2058,7 +2140,7 @@ research project and workflow.</p>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="default-environment.yml-file" class="callout-inner">
-<h3 class="callout-title">Default <code>environment.yml</code> file</h3>
+<h3 class="callout-title">Default “environment.yml” file</h3>
 <div class="callout-content">
 <p>Note that by convention Conda environment files are called
 <code>environment.yml</code>. As such if you use the
@@ -2112,14 +2194,12 @@ fixing only the major and minor version numbers while allowing the patch
 version number to vary allows us to use our environment file to update
 our environment to get any bug fixes whilst still maintaining
 significant consistency of our Conda environment across updates.</p>
-<div id="always-version-control-your-environment.yml-files" class="callout">
+<div id="always-version-control-your-environment.yml-file" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="always-version-control-your-environment.yml-files" class="callout-inner">
-<h3 class="callout-title">
-<em>Always</em> version control your
-<code>environment.yml</code> files!</h3>
+<div id="always-version-control-your-environment.yml-file" class="callout-inner">
+<h3 class="callout-title">Always version control your “environment.yml” file</h3>
 <div class="callout-content">
 <p>While you should <em>never</em> version control the contents of your
 <code>env/</code> environment sub-directory, you should <em>always</em>
@@ -2150,8 +2230,7 @@ $ cd project-dir</code></pre>
 <code>environment.yml</code> file is stored within your
 <code>project-dir</code> directory.</p>
 </div>
-</section><section><h2 class="section-heading" id="automatically-generate-an-environment-yml">Automatically generate an <code>environment.yml</code>
-<a class="anchor" aria-label="anchor" href="#automatically-generate-an-environment-yml"></a>
+</section><section><h2 class="section-heading" id="automatically-generate-environment-yml">Automatically generate “environment.yml”<a class="anchor" aria-label="anchor" href="#automatically-generate-environment-yml"></a>
 </h2>
 <hr class="half-width">
 <p>To export the packages installed into the previously created
@@ -2194,12 +2273,12 @@ have specifically installed.</p>
 independent of the operating system they use, make sure to add the
 <code>--from-history</code> argument to the
 <code>conda env export</code> command.</p>
-<div id="create-a-new-environment-from-a-yaml-file." class="callout challenge">
+<div id="create-a-new-environment-from-a-yaml-file" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="create-a-new-environment-from-a-yaml-file." class="callout-inner">
-<h3 class="callout-title">Create a new environment from a YAML file.</h3>
+<div id="create-a-new-environment-from-a-yaml-file" class="callout-inner">
+<h3 class="callout-title">Create a new environment from a YAML file</h3>
 <div class="callout-content">
 <p>Create a new project directory and then create a new
 <code>environment.yml</code> file inside your project directory with the
@@ -2259,12 +2338,12 @@ contain the same packages.</p>
 </div>
 </div>
 </div>
-<div id="specifying-channels-in-the-environment.yml" class="callout">
+<div id="specifying-channels-in-environment.yml" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="specifying-channels-in-the-environment.yml" class="callout-inner">
-<h3 class="callout-title">Specifying channels in the environment.yml</h3>
+<div id="specifying-channels-in-environment.yml" class="callout-inner">
+<h3 class="callout-title">Specifying channels in “environment.yml”</h3>
 <div class="callout-content">
 <p>We learned in the previous episode, that some packages may need to be
 installed from other than the defaults channel. We can also specify the
@@ -2361,17 +2440,21 @@ Scikit-Learn.</p>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The <code>environment.yml</code> file should now look as follows.</p>
-<pre><code><span><span class="va">name</span><span class="op">:</span> <span class="va">scikit</span><span class="op">-</span><span class="va">learn</span><span class="op">-</span><span class="va">env</span></span>
-<span></span>
-<span><span class="va">dependencies</span><span class="op">:</span></span>
-<span>  <span class="op">-</span> <span class="va">dask</span><span class="op">=</span><span class="fl">2.16</span></span>
-<span>  <span class="op">-</span> <span class="va">dask</span><span class="op">-</span><span class="va">ml</span><span class="op">=</span><span class="fl">1.4</span></span>
-<span>  <span class="op">-</span> <span class="va">ipython</span><span class="op">=</span><span class="fl">7.13</span></span>
-<span>  <span class="op">-</span> <span class="va">matplotlib</span><span class="op">=</span><span class="fl">3.1</span></span>
-<span>  <span class="op">-</span> <span class="va">pandas</span><span class="op">=</span><span class="fl">1.0</span></span>
-<span>  <span class="op">-</span> <span class="va">pip</span><span class="op">=</span><span class="fl">20.0</span></span>
-<span>  <span class="op">-</span> <span class="va">python</span><span class="op">=</span><span class="fl">3.6</span></span>
-<span>  <span class="op">-</span> <span class="va">scikit</span><span class="op">-</span><span class="va">learn</span><span class="op">=</span><span class="fl">0.22</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> scikit-learn-env</span></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="fu">dependencies</span><span class="kw">:</span></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> dask=2.16</span></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> dask-ml=1.4</span></span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> ipython=7.13</span></span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> matplotlib=3.1</span></span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> pandas=1.0</span></span>
+<span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> pip=20.0</span></span>
+<span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> python=3.6</span></span>
+<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> scikit-learn=0.22</span></span></code></pre>
+</div>
 <p>You could use the following command, that will rebuild the
 environment from scratch with the new Dask dependencies:</p>
 <div class="codewrapper sourceCode" id="cb15">
@@ -2390,13 +2473,12 @@ Dask dependencies, you can use:</p>
 </div>
 </div>
 </div>
-<div id="installing-via-pip-in-environment.yml-files" class="callout">
+<div id="installing-via-pip-in-environment.yml" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="installing-via-pip-in-environment.yml-files" class="callout-inner">
-<h3 class="callout-title">Installing via <code>pip</code> in
-<code>environment.yml</code> files</h3>
+<div id="installing-via-pip-in-environment.yml" class="callout-inner">
+<h3 class="callout-title">Installing via pip in “environment.yml”</h3>
 <div class="callout-content">
 <p>Since you write <code>environment.yml</code> files for all of your
 projects, you might be wondering how to specify that packages should be
@@ -2423,15 +2505,23 @@ suite of visual diagnostic tools called “Visualizers” that extend the <a hre
 human steering of the model selection process. Recent version of
 yellowbrick can also be installed using <code>conda</code> from the
 <code>conda-forge</code> channel.</p>
-<pre><code>$ conda install --channel conda-forge yellowbrick=1.2 --prefix ./env</code></pre>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ex">$</span> conda install <span class="at">--channel</span> conda-forge yellowbrick=1.2 <span class="at">--prefix</span> ./env</span></code></pre>
+</div>
 <p>An alternative way of installing dependencies via <code>pip</code> in
 your environment files is to store all the packages that you wish to
 install via <code>pip</code> in a <code>requirements.txt</code> file and
 then add the following to your <code>environment.yml file</code>.</p>
-<pre><code>...
-  - pip
-  - pip:
-    - -r file:requirements.txt</code></pre>
+<div class="codewrapper sourceCode" id="cb19">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="co">...</span></span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="co">  - pip</span></span>
+<span id="cb19-3"><a href="#cb19-3" tabindex="-1"></a><span class="co">  - pip:</span></span>
+<span id="cb19-4"><a href="#cb19-4" tabindex="-1"></a><span class="co">    - -r file:requirements.txt</span></span></code></pre>
+</div>
 <p>Conda will then install your <code>pip</code> dependencies using
 <code>python -m pip install -r requirements.txt</code> (after creating
 the Conda environment and installing all Conda installable
@@ -2470,12 +2560,20 @@ the <code>ipykernel</code> package.</p>
 <span id="cb20-10"><a href="#cb20-10" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> scikit-learn=0.22</span></span></code></pre>
 </div>
 <p>Next, rebuild the Conda environment using the following command.</p>
-<pre><code>$ conda env create --prefix ./env --file environment.yml --force</code></pre>
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">$</span> conda env create <span class="at">--prefix</span> ./env <span class="at">--file</span> environment.yml <span class="at">--force</span></span></code></pre>
+</div>
 <p>Once the Conda environment has been re-built you can activate the
 environment and then create the custom kernel for the activated
 environment.</p>
-<pre><code>$ conda activate ./env
-$ python -m ipykernel install --user --name xgboost-env --display-name "XGBoost"</code></pre>
+<div class="codewrapper sourceCode" id="cb22">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">$</span> conda activate ./env</span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a><span class="ex">$</span> python <span class="at">-m</span> ipykernel install <span class="at">--user</span> <span class="at">--name</span> xgboost-env <span class="at">--display-name</span> <span class="st">"XGBoost"</span></span></code></pre>
+</div>
 <p>The last command installs a kernel spec file for the current
 environment. Kernel spec files are JSON files which can be viewed and
 changed with a normal text editor. The <code>--name</code> value is used
@@ -2536,7 +2634,7 @@ environments to an existing JupterLab install.</li>
 </div>
 </section></section><section id="aio-05-managing-cuda-dependencies"><p>Content from <a href="05-managing-cuda-dependencies.html">Managing GPU dependencies</a></p>
 <hr>
-<p>Last updated on 2024-11-14 |
+<p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/05-managing-cuda-dependencies.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2734,7 +2832,7 @@ Library (NCCL) are available via Conda Forge?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Use the <code>conda search</code> command with the
 <code>--channel conda-forge</code> option.</p>
@@ -2869,7 +2967,7 @@ environment will also need NCCL and an MPI implementation.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Use the <code>tensorflow-gpu</code> meta-package to select the
 appropriate version and build of TensorFlow for your OS; use <a href="https://mpi4py.readthedocs.io/en/stable/" class="external-link"><code>mpi4py</code></a>
@@ -2953,7 +3051,7 @@ have been installed. Do you recognize any of the packages?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Use the following commands to create the environment.</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -3048,7 +3146,7 @@ the use with <a href="https://pytorch.org/" class="external-link">PyTorch</a>.</
 <p>The <code>requirements.txt</code> file referenced above contains
 PyTorch Cluster and related packages such as <a href="https://github.com/rusty1s/pytorch_geometric" class="external-link">PyTorch
 Geometric</a>. Here is what that file looks like.</p>
-<pre><code>torch-scatter==2.0.*
+<pre class="text"><code>torch-scatter==2.0.*
 torch-sparse==0.6.*
 torch-spline-conv==1.2.*
 torch-cluster==1.5.*
@@ -3163,7 +3261,7 @@ support via <a href="https://github.com/chaoleili/jupyterlab_tensorboard" class=
 Note the use of the <code>--no-binary</code> option at the end of the
 file. Including this option insures that Horovod will be re-built
 whenever the Conda environment is re-built.</p>
-<pre><code>horovod==0.19.*
+<pre class="text"><code>horovod==0.19.*
 jupyterlab-nvdashboard==0.2.*
 jupyter-tensorboard==0.2.*
 
@@ -3306,8 +3404,8 @@ NVIDIA CUDA Toolkit install).</li>
   "url": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/aio.html",
   "identifier": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/aio.html",
   "dateCreated": "2019-05-19",
-  "dateModified": "2024-11-14",
-  "datePublished": "2024-11-14"
+  "dateModified": "2024-11-15",
+  "datePublished": "2024-11-15"
 }
 
   </script><script>

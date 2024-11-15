@@ -326,7 +326,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Working with Environments</h1>
-        <p>Last updated on 2024-11-14 |
+        <p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/02-working-with-environments.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -428,8 +428,7 @@ deactivate environments, which is how you switch between them.</p>
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="avoid-installing-packages-into-your-base-conda-environment" class="callout-inner">
-<h3 class="callout-title">Avoid installing packages into your
-<code>base</code> Conda environment</h3>
+<h3 class="callout-title">Avoid installing packages into your “base” Conda environment</h3>
 <div class="callout-content">
 <p>Conda has a default environment called <code>base</code> that include
 a Python installation and some core system libraries and dependencies of
@@ -483,7 +482,11 @@ then you can use search to see what versions are available using the
 <p>So, for example, if you wanted to see which versions of <a href="https://scikit-learn.org/stable/" class="external-link">Scikit-learn</a>, a popular
 Python library for machine learning, were available, you would run the
 following.</p>
-<pre><code>$ conda search scikit-learn</code></pre>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ex">$</span> conda search scikit-learn</span></code></pre>
+</div>
 <p>As always you can run <code>conda search --help</code> to learn about
 available options.</p>
 </div>
@@ -573,7 +576,11 @@ environment by name using the <code>activate</code> command.</p>
 </div>
 <p>You can see that an environment has been activated because the shell
 prompt will now include the name of the active environment.</p>
-<pre><code>(basic-scipy-env) $</code></pre>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="kw">(</span><span class="ex">basic-scipy-env</span><span class="kw">)</span> <span class="ex">$</span></span></code></pre>
+</div>
 </section><section><h2 class="section-heading" id="deactivate-the-current-environment">Deactivate the current environment<a class="anchor" aria-label="anchor" href="#deactivate-the-current-environment"></a></h2>
 <hr class="half-width"><p>To deactivate the currently active environment use the Conda
 <code>deactivate</code> command as follows.</p>
@@ -585,7 +592,11 @@ prompt will now include the name of the active environment.</p>
 <p>You can see that an environment has been deactivated because the
 shell prompt will no longer include the name of the previously active
 environment.</p>
-<pre><code>$</code></pre>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="ex">$</span></span></code></pre>
+</div>
 <div id="returning-to-the-base-environment" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1206,8 +1217,8 @@ installed in an environment.</li>
   "url": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/02-working-with-environments.html",
   "identifier": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/02-working-with-environments.html",
   "dateCreated": "2019-05-19",
-  "dateModified": "2024-11-14",
-  "datePublished": "2024-11-14"
+  "dateModified": "2024-11-15",
+  "datePublished": "2024-11-15"
 }
 
   </script><script>

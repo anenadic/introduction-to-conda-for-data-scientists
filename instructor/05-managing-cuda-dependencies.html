@@ -319,7 +319,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Managing GPU dependencies</h1>
-        <p>Last updated on 2024-11-14 |
+        <p>Last updated on 2024-11-15 |
 
         <a href="https://github.com/carpentries-incubator/introduction-to-conda-for-data-scientists/edit/main/episodes/05-managing-cuda-dependencies.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -516,7 +516,7 @@ Library (NCCL) are available via Conda Forge?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Use the <code>conda search</code> command with the
 <code>--channel conda-forge</code> option.</p>
@@ -647,7 +647,7 @@ environment will also need NCCL and an MPI implementation.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Use the <code>tensorflow-gpu</code> meta-package to select the
 appropriate version and build of TensorFlow for your OS; use <a href="https://mpi4py.readthedocs.io/en/stable/" class="external-link"><code>mpi4py</code></a>
@@ -730,7 +730,7 @@ have been installed. Do you recognize any of the packages?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Use the following commands to create the environment.</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -820,7 +820,7 @@ the use with <a href="https://pytorch.org/" class="external-link">PyTorch</a>.</
 <p>The <code>requirements.txt</code> file referenced above contains
 PyTorch Cluster and related packages such as <a href="https://github.com/rusty1s/pytorch_geometric" class="external-link">PyTorch
 Geometric</a>. Here is what that file looks like.</p>
-<pre><code>torch-scatter==2.0.*
+<pre class="text"><code>torch-scatter==2.0.*
 torch-sparse==0.6.*
 torch-spline-conv==1.2.*
 torch-cluster==1.5.*
@@ -930,7 +930,7 @@ support via <a href="https://github.com/chaoleili/jupyterlab_tensorboard" class=
 Note the use of the <code>--no-binary</code> option at the end of the
 file. Including this option insures that Horovod will be re-built
 whenever the Conda environment is re-built.</p>
-<pre><code>horovod==0.19.*
+<pre class="text"><code>horovod==0.19.*
 jupyterlab-nvdashboard==0.2.*
 jupyter-tensorboard==0.2.*
 
@@ -1080,8 +1080,8 @@ NVIDIA CUDA Toolkit install).</li>
   "url": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/05-managing-cuda-dependencies.html",
   "identifier": "https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/instructor/05-managing-cuda-dependencies.html",
   "dateCreated": "2019-05-19",
-  "dateModified": "2024-11-14",
-  "datePublished": "2024-11-14"
+  "dateModified": "2024-11-15",
+  "datePublished": "2024-11-15"
 }
 
   </script><script>
