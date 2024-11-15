@@ -72,7 +72,7 @@ deactivate environments, which is how you switch between them.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Avoid installing packages into your `base` Conda environment
+## Avoid installing packages into your "base" Conda environment
 
 Conda has a default environment called `base` that include a Python installation and some core
 system libraries and dependencies of Conda. It is a "best practice" to avoid installing
@@ -123,7 +123,7 @@ So, for example, if you wanted to see which versions of
 [Scikit-learn](https://scikit-learn.org/stable/), a popular Python library for machine learning,
 were available, you would run the following.
 
-```
+```bash
 $ conda search scikit-learn
 ```
 
@@ -208,7 +208,7 @@ $ conda activate basic-scipy-env
 You can see that an environment has been activated because the shell prompt will now include the
 name of the active environment.
 
-```
+```bash
 (basic-scipy-env) $
 ```
 
@@ -223,7 +223,7 @@ To deactivate the currently active environment use the Conda `deactivate` comman
 You can see that an environment has been deactivated because the shell prompt will no longer
 include the name of the previously active environment.
 
-```
+```bash
 $
 ```
 

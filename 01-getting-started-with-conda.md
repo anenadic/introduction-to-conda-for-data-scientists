@@ -194,9 +194,9 @@ your usual version of Python in your normal environment.
 
 ## Conda vs. Miniconda vs. Anaconda
 
-<p align="center">
-  <img alt="Conda vs. Miniconda vs. Anaconda" src="fig/miniconda_vs_anaconda.png" width="500">
-</p>
+![Conda vs. Miniconda vs. Anaconda](fig/miniconda_vs_anaconda.png){
+alt="A graphical representation of Conda as a subset of Miniconda which is a subset of Anaconda" width="67%"}
+
 Users are often confused about the differences between Conda, Miniconda, and Anaconda. Conda is 
 a tool for managing environments and installing packages. Miniconda combines Conda with Python 
 and a small number of core packages; Anaconda includes Miniconda as well as a large number of 

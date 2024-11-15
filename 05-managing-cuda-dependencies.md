@@ -424,7 +424,7 @@ The `requirements.txt` file referenced above contains PyTorch Cluster and relate
 [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric). Here is what that file looks
 like.
 
-```
+```text
 torch-scatter==2.0.*
 torch-sparse==0.6.*
 torch-spline-conv==1.2.*
@@ -528,7 +528,7 @@ JupyterLab extensions to enable GPU and CPU resource monitoring via
 `--no-binary` option at the end of the file. Including this option insures that Horovod will be
 re-built whenever the Conda environment is re-built.
 
-```
+```text
 horovod==0.19.*
 jupyterlab-nvdashboard==0.2.*
 jupyter-tensorboard==0.2.*

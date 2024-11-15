@@ -45,7 +45,7 @@ workflow.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Default `environment.yml` file
+## Default "environment.yml" file
 
 Note that by convention Conda environment files are called `environment.yml`. As such if you use
 the `conda env create` sub-command without passing the `--file` option, then `conda` will expect to
@@ -98,7 +98,7 @@ Conda environment across updates.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## *Always* version control your `environment.yml` files!
+## Always version control your "environment.yml" file
 
 While you should *never* version control the contents of your `env/` environment sub-directory,
 you should *always* version control your `environment.yml` files. Version controlling your
@@ -130,7 +130,7 @@ $ conda activate ./env
 Note that the above sequence of commands assumes that the `environment.yml` file is stored within
 your `project-dir` directory.
 
-## Automatically generate an `environment.yml`
+## Automatically generate "environment.yml"
 
 To export the packages installed into the previously created `machine-learning-env` you can run the
 following command:
@@ -171,7 +171,7 @@ make sure to add the `--from-history` argument to the `conda env export` command
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Create a new environment from a YAML file.
+## Create a new environment from a YAML file
 
 Create a new project directory and then create a new `environment.yml` file inside your project
 directory with the following contents.
@@ -225,7 +225,7 @@ created in different locations but contain the same packages.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Specifying channels in the environment.yml
+## Specifying channels in "environment.yml"
 
 We learned in the previous episode, that some packages may need to be installed from other than the
 defaults channel. We can also specify the channels, that conda should look for the packages within the
@@ -299,7 +299,7 @@ core Python data science tools such as Numpy Pandas, and Scikit-Learn.
 
 The `environment.yml` file should now look as follows.
 
-```
+```yaml
 name: scikit-learn-env
 
 dependencies:
@@ -332,7 +332,7 @@ $ conda env update --prefix ./env --file environment.yml  --prune
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Installing via `pip` in `environment.yml` files
+## Installing via pip in "environment.yml"
 
 Since you write `environment.yml` files for all of your projects, you might be wondering how
 to specify that packages should be installed using `pip` in the `environment.yml` file.  Here
@@ -360,7 +360,7 @@ visual diagnostic tools called "Visualizers" that extend the
 [Scikit-Learn](https://scikit-learn.org/stable/) API to allow human steering of the model selection
 process. Recent version of yellowbrick can also be installed using `conda` from the `conda-forge` channel.
 
-```
+```bash
 $ conda install --channel conda-forge yellowbrick=1.2 --prefix ./env
 ```
 
@@ -368,7 +368,7 @@ An alternative way of installing dependencies via `pip` in your environment file
 packages that you wish to install via `pip` in a `requirements.txt` file and then add the following to
 your `environment.yml file`.
 
-```
+```yaml
 ...
   - pip
   - pip:
@@ -410,14 +410,14 @@ dependencies:
 
 Next, rebuild the Conda environment using the following command.
 
-```
+```bash
 $ conda env create --prefix ./env --file environment.yml --force
 ```
 
 Once the Conda environment has been re-built you can activate the environment and then create the
 custom kernel for the activated environment.
 
-```
+```bash
 $ conda activate ./env
 $ python -m ipykernel install --user --name xgboost-env --display-name "XGBoost"
 ```
